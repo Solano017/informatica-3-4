@@ -12,7 +12,7 @@ scanf("%f", &fahrenheit);
 celsius = (fahrenheit - 32) * 5 / 9; //formula celsius
 
 
-printf("celsius: %.0f\n", celsius);
+printf("celsius: %.1f\n", celsius);
 
 
 }
