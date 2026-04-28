@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void)
+{
+    char name[50]; // Variable to store the user's name
+
+    printf("Enter your name: "); // Ask the user for their name
+    scanf("%s", name); // Save the name entered by the user
+    printf("Hello, %s!\n", name); // Print Hello + the user's name
+
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age); // FIXED: removed extra quote and correct syntax
+
+    printf("You are %d years old.\n", age); // FIXED: completed printf
+
+}
+// End of the program
