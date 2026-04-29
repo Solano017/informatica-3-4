@@ -26,10 +26,10 @@ int main(void)
 
     // Ajustar si minutos pasan de 60
     if (finalMin >= 60)
-    {
+
         fhour += finalMin / 60;
         finalMin = finalMin % 60;
-    }
+    
 
     printf("End time: %d:%02d\n", fhour, finalMin);
 
