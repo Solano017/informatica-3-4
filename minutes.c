@@ -17,6 +17,9 @@ int min = total_minutes % 60;
 int end_h =start_h + hours;
 int end_m = start_m + min;
 
+end_h += end_m / 60;
+end_m = end_m % 60;
+
 printf("The movie will last %d hr and %d min.\n", hours, min);
 printf("End time: %d:%d \n", end_h, end_m);
 }
