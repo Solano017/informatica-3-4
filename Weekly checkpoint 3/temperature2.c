@@ -9,24 +9,23 @@ int main(void)
     fahrenheit = (celsius * 1.8) + 32;
     printf("%0.2f°C = %0.2f°F\n", celsius, fahrenheit);
 
-
-    if (celsius < 0){
-        printf("Freezing Water \n");
+    if (celsius < 0) {
+        printf("❄️ Freezing Water\n");
     }
-    if (celsius <10){
-        printf("🥶 Very cold weather \n");
+    else if (celsius < 10) {
+        printf("🥶 Very cold water\n");
     }
-    if (celsius <20){
-        printf("🧥 Chilly weather \n");
+    else if (celsius < 20) {
+        printf("🧥 Chilly water\n");
     }
-    if (celsius <30){
-        printf("🖼️ Normal weather \n");
+    else if (celsius < 30) {
+        printf("🖼️ Normal water\n");
     }
-    if (celsius <40){
-        printf("☀️ Hot weather \n");
+    else if (celsius < 40) {
+        printf("☀️ Hot water\n");
     }
-    if (celsius >40){
-        printf("🔥 Very hot weather \n");
+    else {
+        printf("🔥 Very hot water\n");
     }
 
 }
