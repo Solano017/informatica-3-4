@@ -22,6 +22,8 @@ if (user_response == 1){
     multiply();
 } else if (user_response == 4){
     divide();
+} else {
+    printf("invalid option womp womp \n");
 }
 }
 // 2. Define
@@ -66,6 +68,11 @@ printf("⚠️ ⚠️ ⚠️ \tDO NOT DIVIDE BY 0 ⚠️ ⚠️ ⚠️ \n");
         printf("Enter second number: ");
     scanf("%f", &two);
     float answer = (one / two);
+    if (two == 0) {
+        printf("OMG WHY WOULD YOU DO THAT 😡 \n");
+        printf("😡😡😡😡😡😡😡😡😡😡😡😡😡😡\n");
+    } else if(two != 0) {
     printf("%.2f \n", answer);
+    }
 }
 
